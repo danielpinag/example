@@ -1,0 +1,23 @@
+$background: #FAFBFE;
+
+@import 'min_width_media';
+
+body {
+  background-color: $background;
+  margin: 0px;  
+  font-family: sans-serif;
+  .container {
+    padding: 0px 45px 0px 90px;
+    margin: auto;
+    height: auto;
+    width: 350px;
+
+    @import 'header';
+    @import 'notification';
+
+    @media screen and (min-width: $desktop) {
+      width: auto;
+    }
+
+  }
+}

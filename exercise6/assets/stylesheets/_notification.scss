@@ -1,0 +1,99 @@
+$notification-background: #FFFFFF;
+$border-background: #EEEEEE;
+$blue: #0027F3;
+$topic-background: #F3F5FE;
+$hover-background: #DAE2F6;
+$hover-border: solid .5px #D0DAF4;
+
+@import 'header';
+@import 'min_width_media';
+
+.notification-section {
+  .notification {
+    padding: 50px 30px 20px 20px;
+    margin-bottom: 30px; 
+    background: $notification-background;
+    border-radius: 5px;
+    border: solid 0.8px $border-background;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.01), 0 5px 10px rgba(0,0,0,0.01);
+    .date {
+      color: $grey;
+      font-size: 16px;
+      margin-bottom: 25px;
+
+      @media screen and (min-width: $desktop) {
+        display: inline-block;
+      }
+    }
+    .marker-section {
+      position: relative;
+      left: 35%;
+      margin-top: 35px;
+      color: $black;
+      width: 175px;
+      font-size: 14px;
+      font-weight: bold;
+      .marker {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        .marker-text {
+        @media screen and (min-width: $desktop) {
+          :hover {
+            background-color: $hover-background;
+            border: $hover-border;
+            display: inline-block;
+          }
+        }
+      }
+      .icon{
+        float: right;
+        @media screen and (min-width: $desktop) {
+          :hover {
+            background-color: $hover-background;              
+            border: $hover-border;
+            display: inline-block;
+          }
+        }
+      }
+      }
+      @media screen and (min-width: $desktop) {
+        display: inline-block;
+        margin-top: 0px;
+        left: 68%;
+      }
+    }
+    .description {
+      font-size: 15px;
+      line-height: 30px;
+      text-align: left;
+    }
+    .related-topics {
+      width: 200px;
+      line-height: 14px;
+      p {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 42px;
+        padding: 0px 14px 0px 14px;
+        margin: 4px 2px 4px 2px;
+        font-size: 14px;
+        color: $blue;
+        border-radius: 30px;
+        background-color: $topic-background;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 100%;
+        border-bottom: solid 1px $border-background;
+        padding-bottom: 45px;
+      }
+    }
+    .resources-list {
+      li {
+        color: $grey;
+      }
+    }
+  }
+}
