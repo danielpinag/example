@@ -1,0 +1,125 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px; }
+  body .container {
+    padding: 15px;
+    margin: auto;
+    height: auto;
+    width: 800px; }
+    @media screen and (max-width: 375px) {
+      body .container {
+        width: auto; } }
+    body .container .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10px 20px 10px; }
+      @media screen and (max-width: 375px) {
+        body .container .header {
+          padding: 20px 7px 14px 7px; } }
+      body .container .header .title {
+        font-size: 30px;
+        font-weight: bold; }
+        @media screen and (max-width: 375px) {
+          body .container .header .title {
+            font-size: 20px; } }
+      body .container .header .pagination {
+        width: 200px;
+        display: flex;
+        justify-content: space-between; }
+        @media screen and (max-width: 375px) {
+          body .container .header .pagination {
+            width: 100px; } }
+        body .container .header .pagination .page {
+          font-size: 20px;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          @media screen and (max-width: 375px) {
+            body .container .header .pagination .page {
+              font-size: 14px; } }
+        body .container .header .pagination .previous-page {
+          height: 35px;
+          width: 50px; }
+          @media screen and (max-width: 375px) {
+            body .container .header .pagination .previous-page {
+              height: 18px;
+              width: 25px; } }
+        body .container .header .pagination .next-page {
+          height: 35px;
+          width: 50px; }
+          @media screen and (max-width: 375px) {
+            body .container .header .pagination .next-page {
+              height: 18px;
+              width: 25px; } }
+        body .container .header .pagination .change-page {
+          font-size: 30px;
+          font-weight: 900;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%; }
+          @media screen and (max-width: 375px) {
+            body .container .header .pagination .change-page {
+              font-size: 15px; } }
+        body .container .header .pagination .change-page:hover {
+          cursor: pointer;
+          opacity: 0.8;
+          background-color: #D1D1D1;
+          border-radius: 5px; }
+      body .container .header .create-avatar {
+        font-size: 20px; }
+        @media screen and (max-width: 375px) {
+          body .container .header .create-avatar {
+            font-size: 13px; } }
+        body .container .header .create-avatar a {
+          color: inherit; }
+    body .container .avatar-zone {
+      display: flex;
+      flex-wrap: wrap; }
+      body .container .avatar-zone .avatar-card {
+        width: 380px;
+        margin: 10px;
+        display: inline-block;
+        box-shadow: 0px 0px 3px 0px; }
+        @media screen and (max-width: 375px) {
+          body .container .avatar-zone .avatar-card {
+            width: 350px; } }
+        body .container .avatar-zone .avatar-card .avatar-data {
+          margin: 5px;
+          display: flex;
+          flex-wrap: wrap; }
+          body .container .avatar-zone .avatar-card .avatar-data .card-left .avatar-image {
+            height: 150px;
+            width: 150px;
+            border-radius: 5px; }
+            @media screen and (max-width: 375px) {
+              body .container .avatar-zone .avatar-card .avatar-data .card-left .avatar-image {
+                height: 100px;
+                width: 100px; } }
+          body .container .avatar-zone .avatar-card .avatar-data .card-right {
+            width: 55%;
+            margin-left: 5px; }
+            body .container .avatar-zone .avatar-card .avatar-data .card-right .avatar-id {
+              font-weight: bold;
+              font-size: 20px; }
+            body .container .avatar-zone .avatar-card .avatar-data .card-right .avatar-name {
+              font-size: 15px; }
+            body .container .avatar-zone .avatar-card .avatar-data .card-right .avatar-phone {
+              padding-top: 30px;
+              font-size: 15px; }
+          body .container .avatar-zone .avatar-card .avatar-data .card-bottom {
+            width: 100%; }
+            body .container .avatar-zone .avatar-card .avatar-data .card-bottom .avatar-email {
+              background-color: #917CF7;
+              width: 100%;
+              border-radius: 10px;
+              margin-top: 5px;
+              display: flex;
+              justify-content: center;
+              color: #FFFFFF;
+              font-size: 15px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,160 @@
+$mobile: 375px;
+$grey: #D1D1D1;
+$purple: #917CF7;
+$white: #FFFFFF;
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  .container{
+    padding: 15px;
+    margin: auto;
+    height: auto;
+    width: 800px;
+
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10px 20px 10px;
+
+      @media screen and (max-width: $mobile) {
+        padding: 20px 7px 14px 7px;
+      }
+      .title{
+        font-size: 30px;
+        font-weight: bold;
+
+        @media screen and (max-width: $mobile) {
+          font-size: 20px; 
+        }
+      }
+      .pagination{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $mobile) {
+          width: 100px;
+        }
+        .page{
+          font-size: 20px;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 14px;
+          }
+        }
+        .previous-page{
+          height: 35px;
+          width: 50px;
+          @media screen and (max-width: $mobile) {
+            height: 18px;
+            width: 25px;
+          }
+        }
+        .next-page{
+          height: 35px;
+          width: 50px;
+
+          @media screen and (max-width: $mobile) {
+            height: 18px;
+            width: 25px;
+          }
+        }
+        .change-page{
+          font-size: 30px;
+          font-weight: 900;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          height: 100%;
+          width: 100%;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 15px;
+          }
+        }
+        .change-page:hover{
+          cursor: pointer;
+          opacity: 0.8;
+          background-color: $grey;
+          border-radius: 5px;
+        }
+      }
+      .create-avatar{
+        font-size: 20px;
+
+        @media screen and (max-width: $mobile) {
+          font-size: 13px;
+        }
+        a{
+          color: inherit;
+        }
+      }
+    }
+    .avatar-zone{
+      display: flex;
+      flex-wrap: wrap;
+      .avatar-card{
+        width: 380px;
+        margin: 10px;
+        display: inline-block;
+        box-shadow: 0px 0px 3px 0px;
+
+        @media screen and (max-width: $mobile) {
+          width: 350px;
+        }
+        .avatar-data{
+          margin: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          .card-left{
+            .avatar-image{
+              height: 150px;
+              width: 150px;
+              border-radius: 5px;
+
+              @media screen and (max-width: $mobile) {
+                height: 100px;
+                width: 100px;
+              }
+            }
+          }
+          .card-right{
+            width: 55%;
+            margin-left: 5px;
+            .avatar-id{
+              font-weight: bold;
+              font-size: 20px;
+            }
+            .avatar-name{
+              font-size: 15px;
+            }
+            .avatar-phone{
+              padding-top: 30px;
+              font-size: 15px;
+            }
+          }
+          .card-bottom{
+            width: 100%;
+            .avatar-email{
+              background-color: $purple;
+              width: 100%;
+              border-radius: 10px;
+              margin-top: 5px;
+              display: flex;
+              justify-content: center;
+              color: $white;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
