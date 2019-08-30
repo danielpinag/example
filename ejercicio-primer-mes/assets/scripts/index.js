@@ -1,16 +1,22 @@
 var pageNumber = 1;
+
 function previousPage(){
   pageNumber = pageNumber - 1;
   $(".avatar-card").remove()
   $(".change-page").remove()
   loadPage()
-  window.history.pushState({}, "Avatares", `?page=${pageNumber}`);
+  changeUrl(pageNumber);
 }
+
 function nextPage(){
   pageNumber = pageNumber + 1;
   $(".avatar-card").remove()
   $(".change-page").remove()
   loadPage()
+  changeUrl(pageNumber);
+}
+
+function changeUrl(pageNumber){
   window.history.pushState({}, "Avatares", `?page=${pageNumber}`);
 }
 
@@ -26,11 +32,11 @@ function loadPage(){
     $(".page").empty().append(pagination);
     var previousPageButton = "";
     var nextPageButton = "";
-    if(pageNumber != 1){
+    if(pageNumber > 1){
       previousPageButton = `<div class="change-page" onclick="previousPage()"><</div>`
       $(".previous-page").empty().append(previousPageButton);
     };
-    if(pageNumber != response.total_pages){
+    if(pageNumber < response.total_pages){
       nextPageButton = `<div class="change-page" onclick="nextPage()">></div>`
       $(".next-page").empty().append(nextPageButton);
     };
@@ -55,6 +61,3 @@ function loadPage(){
     });
   });
 };
-
-
-//window.history.pushState("object or string", "Page Title", "/newURL");

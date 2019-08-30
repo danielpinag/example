@@ -52,6 +52,7 @@ body{
         .previous-page{
           height: 35px;
           width: 50px;
+
           @media screen and (max-width: $mobile) {
             height: 18px;
             width: 25px;
@@ -86,6 +87,7 @@ body{
           border-radius: 5px;
         }
       }
+
       .create-avatar{
         font-size: 20px;
 
@@ -95,7 +97,7 @@ body{
         a{
           color: inherit;
         }
-      }
+      }  
     }
     .avatar-zone{
       display: flex;
